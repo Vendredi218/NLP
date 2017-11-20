@@ -6,7 +6,7 @@ prepared for the following clustering analysis
 ## Entrance: ltp_analysis_s.py
 The entrance is python process.py  -h 返回值为抽取结构表或分时间槽的（A0，V,A1）词频统计
 
-## Examples：##
+## Examples： ##
 
     %run ltp_analysis_s.py -r 'excel' -rf 'douban_tianfuzhen.xlsx' -w 'excel' -wf '1114tianfuzhen_freq' -sl 'all'
 
