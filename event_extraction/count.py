@@ -27,7 +27,7 @@ def extract_words(phrase_list):
 def count4topic(phrase_list):
 #    print ('phrase_list:',phrase_list)
     global ltp, ltp_process
-    ltp = LTP_word("/home/zww/learngit/project_test/dp_relation_2/models")
+    ltp = LTP_word("////////")
     ltp_process = LtpProcess()
     seg_words = extract_words(phrase_list)
 #    print ('seg_words:',seg_words)
