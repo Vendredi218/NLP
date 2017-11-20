@@ -289,7 +289,7 @@ def extract_yuyi_event(sent):
 def extract_yuyi_main(sentsdoc):
     print("开始语义抽取")
     global ltp,ltp_process
-    ltp=LTP_word("/home/zww/learngit/project_test/dp_relation_2/models")
+    ltp=LTP_word("//////models")
     ltp_process=LtpProcess()
     doce = sentsdoc.loc[:,['sent_id','sent','content_id']].get_values()
     corelists=[]
