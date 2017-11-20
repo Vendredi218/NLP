@@ -1,11 +1,12 @@
-# Intro: 本项目基于语义规则抽取社交文本中的事件，并以A0（施事者）V（动作）A1（受事者）结构输出，根据时间来进行词频统计。prepared for the following clustering analysis
+# Intro: #
+This project focuses on extracting events from social media texts based on semantic rules. Output structure is consisted of A0(agent), V(action), A1(object). And it generates pivot tables to do word frequency analysis with different time period.
 
-
+prepared for the following clustering analysis
 
 ## Entrance: ltp_analysis_s.py
-模块调用的入口,具体调用 python process.py -h 返回值为抽取结构表或分时间槽的（A0，V,A1）词频统计
+The entrance is python process.py  -h 返回值为抽取结构表或分时间槽的（A0，V,A1）词频统计
 
-## 使用示例：
+## Examples：##
 
     %run ltp_analysis_s.py -r 'excel' -rf 'douban_tianfuzhen.xlsx' -w 'excel' -wf '1114tianfuzhen_freq' -sl 'all'
 
@@ -18,6 +19,3 @@
 * -pe 选择抽取结果词频分析的时间间隔，默认为月，有'year', 'quarter', 'month', 'week', 'day'
 * -sl 选择分析的槽位，默认为'all'. 'extract'是输出事件三元素抽取表，'all'为同时抽取A0,V,A1, 也可单独抽取'A0','A1','V'
 
-### 可以直接在jupyter中操作
-
-https://192.168.1.163:9989/tree/WeiWei/ee
